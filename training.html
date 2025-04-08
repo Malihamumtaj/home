@@ -1,0 +1,259 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of Maliha Mumtaj – Customer Experience Specialist & Web Developer">
+    <meta name="keywords" content="Maliha Mumtaj, Resume, Customer Experience, Web Developer, HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="Maliha Mumtaj">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maliha Mumtaj</title>
+  
+    <!-- W3.CSS and Fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+      html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Roboto", sans-serif;
+      }
+  
+      /* Navigation Bar */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background: rgba(135, 206, 250, 0.9);
+        overflow-x: hidden;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+      }
+  
+      .navbar.open {
+        transform: translateX(0);
+      }
+  
+      .navbar a {
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        color: white;
+        transition: 0.3s;
+      }
+  
+      .navbar a:hover {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        background-color: rgba(0, 0, 255, 0.1);
+      }
+  
+      /* Page Title Button */
+      .page-title-btn {
+        text-align: right;
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+  
+      .page-title-btn:hover {
+        background-color: rgba(0, 0, 255, 0.2);
+      }
+  
+      /* Social Media Footer */
+      .navbar-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        font-size: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+  
+      /* Menu Icon */
+      .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        color: teal;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1100;
+      }
+  
+      /* Overlay */
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 900;
+      }
+  
+      .overlay.active {
+        display: block;
+      }
+  
+      .w3-content {
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  
+  <body class="w3-light-grey">
+  
+    <!-- Menu Icon -->
+    <div class="menu-icon" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </div>
+  
+    <!-- Navigation Bar -->
+    <div id="myNavbar" class="navbar">
+      <!-- Page Title Button -->
+      <button class="page-title-btn" onclick="location.href='/workspaces/Malihamumtaj/index.html'">Maliha Mumtaj</button>
+      
+      <a href="/workspaces/Malihamumtaj/Profile.html"><i class="fa fa-user fa-fw"></i> Profile</a>
+      <a href="/workspaces/Malihamumtaj/experience.html"><i class="fa fa-suitcase fa-fw"></i> Experience</a>
+      <a href="/workspaces/Malihamumtaj/education.html"><i class="fa fa-certificate fa-fw"></i> Education</a>
+      <a href="/workspaces/Malihamumtaj/training.html"><i class="fa fa-wrench fa-fw"></i> Training</a>
+      <a href="/workspaces/Malihamumtaj/contact.html"><i class="fa fa-envelope fa-fw"></i> Contact</a>
+      
+      <div class="navbar-footer">
+        <p>Find me on social media</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <i class="fa fa-github w3-hover-opacity"></i>
+        <p>© 2025 Maliha Mumtaj</p>
+      </div>
+    </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay" onclick="closeNav()"></div>
+
+  <!-- Page Content -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;" onclick="closeNav()">
+    <div class="w3-row-padding">
+
+      <!-- Left Column -->
+      <div class="w3-third">
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="./maliha.png" style="width:100%" alt="Avatar" />
+            <div class="w3-display-bottomleft w3-container w3-text-white">
+              <h2>Maliha Mumtaj</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Customer Experience Specialist</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Jashore, Bangladesh</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>malihamumtajr@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+880 17 98 177 103</p>
+            <hr />
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+            <p>Customer Relationship Management</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+            </div>
+            <p>Problem-Solving & Decision-Making</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
+            </div>
+            <p>Communication & Public Relations</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+            </div>
+            <p>Digital Marketing & SEO</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+            </div>
+            <br />
+            <p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+            <p>Bangla</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+            </div>
+            <p>English</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+            </div>
+            <br />
+          </div>
+        </div>
+        <br />
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Objective
+          </h2>
+          <p>
+            Highly adaptable and detail-oriented Customer Experience Specialist with a strong background in customer support, issue resolution, and process improvement. Passionate about enhancing customer satisfaction through strategic problem-solving and data-driven decision-making. Proficient in communication, critical thinking, and time management, ensuring seamless customer interactions.
+          </p>
+        </div>
+
+       <!-- Page Content -->
+<div class="content-box">
+  <h2><i class="fa fa-cogs icon"></i> Training</h2>
+
+  <div class="w3-card w3-padding">
+    <p><i class="fa fa-database icon"></i> Database Programming – Bangladesh Technical Education Board</p>
+    <p><i class="fa fa-sitemap icon"></i> Network Fundamentals – Bangladesh Technical Education Board</p>
+    <p><i class="fa fa-building icon"></i> Regional Operations Training – Grameenphone Ltd</p>
+  </div>
+
+  <h2><i class="fa fa-lightbulb-o icon"></i> Skills</h2>
+
+  <div class="w3-card w3-padding">
+    <p><i class="fa fa-users icon"></i> Customer Relationship Management (CRM)</p>
+    <p><i class="fa fa-check-square-o icon"></i> Problem-Solving & Decision-Making</p>
+    <p><i class="fa fa-comments icon"></i> Public Relations & Communication</p>
+    <p><i class="fa fa-group icon"></i> Team Collaboration & Leadership</p>
+    <p><i class="fa fa-clock-o icon"></i> Time Management & Efficiency</p>
+    <p><i class="fa fa-search icon"></i> Critical Thinking & Analytical Skills</p>
+    <p><i class="fa fa-globe icon"></i> Digital Marketing & SEO</p>
+  </div>
+</div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find me on social media</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-github w3-hover-opacity"></i>
+    <p class="w3-small">© 2025 Maliha Mumtaj</p>
+  </footer>
+
+  <script>
+    // Toggle navigation bar
+    function toggleNav() {
+      document.getElementById("myNavbar").classList.toggle("open");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+
+    // Close navigation bar
+    function closeNav() {
+      document.getElementById("myNavbar").classList.remove("open");
+      document.getElementById("overlay").classList.remove("active");
+    }
+  </script>
+
+</body>
+</html>
+
+
